@@ -82,7 +82,7 @@ function VerifyOtp() {
 
         const response =
           await axios.post(
-            "http://localhost:5000/api/otp/verify-otp",
+            "http://localhost:8080/api/otp/verify-otp",
             formData
           );
 
@@ -106,7 +106,7 @@ function VerifyOtp() {
         ========================= */
 
         await axios.post(
-          "http://localhost:5000/api/patients/register",
+          "http://localhost:8080/api/patients/register",
           patientData
         );
 
@@ -147,7 +147,7 @@ function VerifyOtp() {
       try {
 
         await axios.post(
-          "http://localhost:5000/api/otp/send-otp",
+          "http://localhost:8080/api/otp/send-otp",
           {
             email:
               formData.email

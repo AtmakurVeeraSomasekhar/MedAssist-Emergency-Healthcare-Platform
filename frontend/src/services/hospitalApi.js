@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const BASE_URL =
-"http://localhost:5000/api/hospitals";
+"http://localhost:8080/api/hospitals";
 
 export const getHospitals =
 async () => {

@@ -49,7 +49,7 @@ function ResetPassword() {
         ========================= */
 
         await axios.post(
-          "http://localhost:5000/api/otp/verify-otp",
+          "http://localhost:8080/api/otp/verify-otp",
           {
             email,
             otp:
@@ -62,7 +62,7 @@ function ResetPassword() {
         ========================= */
 
         await axios.post(
-          "http://localhost:5000/api/otp/reset-password",
+          "http://localhost:8080/api/otp/reset-password",
           {
             email,
             newPassword:

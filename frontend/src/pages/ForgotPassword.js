@@ -38,7 +38,7 @@ function ForgotPassword() {
         ========================= */
 
         await axios.post(
-          "http://localhost:5000/api/otp/send-otp",
+          "http://localhost:8080/api/otp/send-otp",
           { email }
         );
 
