@@ -58,3 +58,11 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+springBoot {
+    mainClass = 'com.emergencyapp.EmergencyAppApplication'
+}
+
+bootJar {
+    mainClass = 'com.emergencyapp.EmergencyAppApplication'
+}
